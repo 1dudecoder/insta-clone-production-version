@@ -18,6 +18,7 @@ router.get("/allpost",requireLogin,(req,res)=>{
     Post.find()
     .populate("postedBy","__id name")
     .populate("comments.postedBy","name _id ")
+    .sort('-createdAt')
     .then((posts)=>{
         res.json({posts})
     })
@@ -30,6 +31,7 @@ router.get("/getsubpost",requireLogin,(req,res)=>{
     Post.find({postedBy:{$in:req.user.following}})
     .populate("postedBy","__id name")
     .populate("comments.postedBy","name _id ")
+    .sort('-createdAt')
     .then((posts)=>{
         res.json({posts})
     })

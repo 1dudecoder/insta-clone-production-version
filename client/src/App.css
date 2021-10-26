@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 
+/* *{
+    box-sizing:border-box !important;
+    margin: 0 !important;
+} */
+
 a{
     color: black !important;
 }
@@ -124,4 +129,11 @@ i:active {
 
 .update_pic{
     margin-bottom: 5px;
+}
+.show{
+    display: block !important;
+}
+
+.hide{
+    display: none !important;
 }

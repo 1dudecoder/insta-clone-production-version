@@ -94,12 +94,10 @@ function Profile() {
                     <h4>{state ? state.email : "loading" }</h4>
 
                     <div style={{display:"flex", justifyContent:"space-between" ,width:"25rem"}}>
-                        <h6> {pics != undefined ? pics.length : "loading"} Posts</h6>
+                        <h6> {pics != undefined ? pics.length : 0} Posts</h6>
                         <h6> {state ? state.followers.length : 0 } Followers</h6>
                         <h6> {state ? state.following.length : 0 } Following</h6>
                     </div>
-
-                    
                 </div>
 
 
