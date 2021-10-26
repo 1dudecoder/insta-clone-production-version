@@ -85,7 +85,7 @@ function SignUp() {
     return (
         <>
         <div className="login-page">
-            <div><img src="/phonephoto.png" alt="phonephoto"/></div>
+            <div><img src="https://res.cloudinary.com/santynitin/image/upload/v1635239023/phonephoto_vc2xr6.png" alt="phonephoto"/></div>
             <div className="card auth-card">
                 <h1>Instagram</h1>
                 <div className="login-input">
